@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cloud Natural Language API + Twitter + Youtube + Maps</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body >
+    <div class="row">
+      <div class="col l2 m2">
+        <h6 class="center-align">Cloud Natural Language API</h6>
+
+        <label for="">Texto a analizar:</label>
+        <input id="taMensaje" name="taMensaje" class="input"></input>
+        <label for="">Número de videos:</label>
+        <input id="tanvideos" name="tanvideos" class="input" type="number"></input>
+        <h6 class="center-align"><button id="btnAnalizar" name="btnAnalizar"
+            onclick="entidades()" class="blue btn">
+            Analizar texto</button>
+        </h6>
+        <table class="table bordered responsive-table">
+          <thead>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Wikipedia URL</th>
+          </thead>
+          <tbody id="cuerpoTabla">  </tbody>
+        </table>
+      </div>
+
+      <div class="col l10 m10">
+        <div id="mapa"></div>
+        <div id="videos" ></div>
+      </div>
+
+
+    </div>
+    <h6 class="center-align">
+      <ul class="pagination" id="paginacion">
+      </ul>
+    </h6>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBJxhXJ6Zk32ADaVNPwd0lK6JRZUKOAkc&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "web":
+  {
+    "client_id":"620662829304-sibi0n6mmspfaroc7ccmm4gujg2e9a02.apps.googleusercontent.com",
+    "project_id":"crucial-weaver-196906",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"6zM8n-CgwMwNWxmks6xwQarW",
+    "redirect_uris":["http://localhost:3000/oauth2callback"],
+    "javascript_origins":["http://localhost:3000"]
+    }
+}
